@@ -1,0 +1,6 @@
+NESW
+4 5
+LLL~~
+~T~~L
+~LLLL
+~~LL~
