@@ -10,8 +10,7 @@ treasure is found or until it determines that there is no treasure (after fully 
 recursively invoking a function and marking the cells visited with a special character (an electronic bread crumb to keep
 from reprocessing explored cells). The legal moves are to cells adjacent to the current cell, but not diagonal to it. The
 order in which adjacent cells must be explored is read from the file. The treasure should be found by using recursive
-calls and backtracking, and not by looking ahead (you do not have the ability to “look” into neighboring cells before
-moving – you simply move and rely on backtracking if it’s a “bad” move). If the specially marked treasure cell is
+calls and backtracking, and not by looking ahead. If the specially marked treasure cell is
 encountered, the game should print a message that it was found. Otherwise, after fully exploring the map, a message is
 output stating that there is no treasure on the island.
 
@@ -53,15 +52,14 @@ a) The TreasureMap class – This class represents a treasure map
 
    Class named TreasureMap
 
-   The interface (header file) is provided and you CAN NOT modify it.
+   The interface (header file) is provided 
 
-    i. You should implement the provided interface file in a class .cpp implementation file
+    i. implement the provided interface file in a class .cpp implementation file
 
     ii. All data members of the type and size specified in the header file
 
-    iii. All member functions in the interface file is implemented as declared – However you have
-    flexibility in how you choose to implement the body of functions, including choice of local variables.
-
+    iii. All member functions in the interface file is implemented as declared
+    
    The constructor will open and read the input file and construct the map. The input file is named
   treasuremap.txt.The file contains a rectangular map no larger than 8 cells by 8 cells  The first line in the
   file is the exploration order: a string containing the characters N,S,E,W in any order. The next
@@ -84,8 +82,7 @@ a) The TreasureMap class – This class represents a treasure map
     parameters indicating the player’s row and column (in that order), and a bool reference variable
     that represents whether or not the treasure has been found. The exploration of the treasure
     map will always begin at row 1, column 1 (which is be a land cell). This function relies on
-    recursion to explore the map and to backtrack. You MAY NOT use a return or break statement
-    in it. 
+    recursion to explore the map and to backtrack. 
 
    The getMove() function, has a single char parameter (an element of the xplor string). It returns
   a std::pair of two ints. The first is the row offset [-1 (go up one row), 1 (go down one row), or 0
